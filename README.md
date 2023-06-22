@@ -12,3 +12,6 @@ address hr &lt; &gt; &copy; &amp;
 
 "```" Tab키 위에 있는 ~을 3번 위아래 지정해주면 코드가 그대로 표기된다
 "----" 3개이상 누르면 구분선이 생긴다.
+
+# 23/06/21~23/6/22 Layout Tag
+header, div, footer, main, section, article, aside, ul, ol, li. dl, dt, dd 
