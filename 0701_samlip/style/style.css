@@ -1,0 +1,49 @@
+/* header */
+header {background-color:skyblue;}
+header h1 a {}
+header h1 a img {}
+header nav {background-color:yellow;}
+header nav ul {}
+header nav ul li {}
+header nav ul li a {}
+header .lnb {background-color:brown;}
+header .lnb li  {}
+header .lnb li a {}
+/* main */
+main {blackground-color:red;}
+main .breadcrumbs_bg {background-color:#f1f1f1;}
+main .breadcrumbs_bg .breadcrumbs {background-color:#f1f1f1;}
+main .breadcrumbs_bg .breadcrumbs a {background-color:#f1f1f1;}
+main .breadcrumbs_bg .breadcrumbs em {background-color:#f1f1f1;}
+/* main-contents1 */
+main .conterts1 {background-color:blue;}
+main .conterts1 h1 {}
+main .conterts1 p {}
+/* main-contents2 */
+main .c2_bg {background-color:#f1f1f1;}
+main .c2_bg .conterts2 {background-color:#f1f1f1;}
+main .c2_bg .conterts2 p {background-color:#f1f1f1;}
+/* main-contents3 */
+main .c3 {background-color:aqua;}
+main .c3 h2 {}
+main .c3 h2+p {}
+/* main-contents4 */
+main .c4_bg {background-color:#f1f1f1;}
+main .c4_bg .conterts4 {background-color:#f1f1f1;}
+main .c4_bg .conterts4 h2 {background-color:#f1f1f1;}
+main .c4_bg .conterts4 ul {background-color:#f1f1f1;}
+main .c4_bg .conterts4 ul li {background-color:#f1f1f1;}
+main .c4_bg .conterts4 ul li h3 {background-color:#f1f1f1;}
+main .c4_bg .conterts4 ul li p {background-color:#f1f1f1;}
+/* footer */
+footer {background-color:yellow;}
+footer .f_top {}
+footer .f_top .fnb {background-color:aqua;}
+footer .f_top .fnb li  {}
+footer .f_top .fnb li a {}
+footer .f_top .site {background-color:red;}
+footer .f_top .site li {}
+footer .f_top .site li a {}
+footer .f_btm {background-color:blue;}
+footer .f_btm address {}
+footer .f_btm p {}
