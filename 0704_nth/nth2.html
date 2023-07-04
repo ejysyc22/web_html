@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>nth2</title>
+    <style>
+        table,th,td {
+            border-collapse:collapse;
+                    border:1px solid black; }   
+                    
+    body {background-color}
+    body #t {}
+    body #t thead {} 
+    body #t thead tr:nth-child(1) {background-color:yellow;} 
+    body #t tbody {} 
+    body #t tbody tr:nth-child(1) td:nth-child(2) {background-color:pink;}  
+    body #t tbody tr td {} 
+    body #t tbody tr:nth-child(2) td:nth-child(1) {background-color:skyblue;}  
+    body #t tbody tr td {} 
+    body #t tbody tr:nth-child(3) td:nth-child(2) {background-color:greenyellow;}  
+    body #t tbody tr td {} 
+
+    </style>
+</head>
+<body>
+    <table id="t">
+        <thead>
+            <tr>
+                <th scope="'col">html5</th>
+                <th scope="'col">css3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>header</td>
+                <td>nth-child</td>
+            </tr>
+            <tr>
+                <td>main</td>
+                <td>display</td>
+            </tr>
+            <tr>
+                <td>footer</td>
+                <td>dorder</td>
+            </tr>
+        </tbody>    
+        </table>
+    
+</body>
+</html>
+
+
+
