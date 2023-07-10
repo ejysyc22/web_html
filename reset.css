@@ -4,10 +4,10 @@
 /* reset.css */
 html,body,
 h1,h2,h3,h4,h5,h6,p,blockquote,address,
-span,strong,em,q,sub,sup,del,s,img,
+span,strong,em,q,sub,sup,del,s,img,a,
 div,header,nav,aside,main,footer,article,figure,figcaption,
 table,thead,tbody,tfoot,tr,th,td,ol,ul,dl,dt,dd,
-form,fieldset,legend,input,select,option,botton,lable,textarea {
+form,fieldset,legend,input,select,option,button,label,textarea {
     font-family: 'Noto Sans KR', sans-serif;
     margin:0; padding:0; line-height:1.0;
     font-size:16px; font-style:normal; font-weight:normal;
@@ -16,5 +16,5 @@ form,fieldset,legend,input,select,option,botton,lable,textarea {
 th {text-align:left;}
 table,tr,th,td {border-collapse:collapse;}
 ul,ol,li {list-style:none;}
-a {color:#000;}
+a {color:#000; text-decoration:none;}
 input {outline:none; border:0;}
