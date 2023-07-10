@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>post</title>
+    <style>
+        /* 내부스타일 */
+        #all {
+            width:600px; height:600px;
+            background-color:lightgray;
+        }
+        #all .box {            
+        width:200; height:200;
+        border:2px solid:black;
+        display:inline-block; margin-left:-6px
+        }
+        #all .a {
+            background-color:yellow;}
+        #all .b {
+            background-color:blue;
+            /* relative (기준)현재 위치 기준 리렉티브 */
+            position:relative;
+            right:0px;    /* 똑같은 좌료에 한쪽 위치만 지정해준다. */ 
+            top:0px;
+        }
+        #all .c {
+            background-color:green;}
+        #all .d {
+            background-color:plum;
+            /* absolute 부모기준 상대위치 앱솔루트 */
+            /* 현재 자신의 위치를 해제한다(부유) */
+            /* 형제 요소와 중첩 가능(부유 특징) */
+            /* absolute가 인식하는 부모기준은? */
+            /* 태그상의 부모가 아닌 
+            position속성과 함께 있는 부모태그 또는
+            position속성 부모가 없을 경우 body를 인식한다.*/
+            position:absolute;
+            right:0; bottom:0px;
+        }
+        /*  */
+        #wrap1 {
+            background-color:aqua;
+            width:800px; height:600px;
+            padding:50px;
+            position:relative;
+        }
+        #wrap1 #wrap2 {
+            background-color:yellow;
+            width:600px; height:500px;
+            padding:50px;
+            position:relative;
+        }
+        #wrap1 #wrap2 #wrap3 {
+            background-color:lime;
+            with:400px; height:400px;
+            padding:50px;
+            position:relative;
+        }
+        #wrap1 #wrap2 #wrap3 h1 {
+            with:100px; height:100px;
+            border:5px solid black;
+            position:fixed;
+            right:0; top:0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="all">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+    </div>
+    <hr>
+    <div id="wrap1">
+        <div id=wrap2>
+            <div id=wrap3>
+                <h1>제목</h1>
+    </div>
+</body>
+</html>
