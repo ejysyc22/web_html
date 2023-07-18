@@ -1,0 +1,176 @@
+/* landing.css */ /* 1920*1080보내는 공간 800 */
+/* 1. title */
+.title_bg {
+    background: url(../images/bg1.png) 
+    no-repeat fixed center 60%;
+    background-size: cover;  /* 사용자가 보는 해상도에 맞게 자동으로 보여진다. 위치값이 세밀하게 잡히지 않을수 있다.*/
+    position: relative;      /* 겹쳐지는 부모 */
+}
+.title_bg::after {     /* ::after은 가상의 속성이여서 전부 다 설정해줘야한다. */
+    content: "";       /* 필수속성이니까 빈 따음표 - 따음표 안에는 문자만 들어갈수 있다. */
+    display: block; height: 800px; width: 100%; /* block은 너비는 기본이 100% */
+    background:linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(0,0,0,0.7) 100%);
+    position: absolute;  /* 부모에 겹치는것 */
+    left: 0; top: 0; z-index: 90;
+    /* absolute 적용시 기본 block 100% inline처럼 변한다. */
+}
+.title_bg #snow {
+    position: absolute; left: 0; top: 0;          /* #snow>title>gr 순서이기 때문에 z-index: #snow200>title100>gr90 */   
+    z-index: 200; width: 100%; height: 800px;     /* 90,100,200 처럼 중간에 숫자를 넣을수 있도록 1단위가 아닌 십단위 이상으로 넣어준다. */
+}
+
+.title_bg .title {background: rgba(255,255,0,0.5);
+    width: 1200px; height:800px ; margin: 0 auto;
+    display: flex; flex-flow: column nowrap;  
+    align-items: center;  /* 교차축의 가운데이니까 align-items:center; */
+    z-index:100; position:relative ;  /* z-index값은 1~999입력가능 z-index와 position 함께 써줘야한다.  */
+}
+.title_bg .title .logo {
+    align-self: flex-start;
+}
+.title_bg .title .logo img {}
+.title_bg .title h1 { 
+    font-size:3.517rem;
+}
+.title_bg .title h1 em {}
+.title_bg .title .sponsor_btn {
+    background: linear-gradient(94deg, rgb(25, 23, 21) 0%, rgba(255,147,0,1) 100%);
+    
+}
+.title_bg .title .sponsor_btn span {
+    font-size:1.77rem;
+}
+.title_bg .title .sponsor_btn img {}
+.title_bg .title .sponsor_qa {
+    align-self: flex-end;}
+.title_bg .title .sponsor_qa img {}
+.title_bg .title .sponsor_qa span {
+    font-size:24px;
+}
+.title_bg .title .sponsor_qa img {}
+
+/* 2. 퀴즈영역 */
+.quiz_bg {
+    background: url(../images/quiz_bg.png) 
+    no-repeat fixed center ; 
+    background-size: cover;  /* 해상도 자동설정 */
+}
+.quiz_bg .quiz {
+    width: 1200px; margin: 0 auto ;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; /* 좌우 끝에 붙인다. */ 
+    padding: 100px 0;  /* 위아래 여백 100px */
+    }
+.quiz_bg .quiz > * {background: pink;} /* quiz > * quiz의 모든 자식들 */
+.quiz_bg .quiz .left {width: 488px;}
+.quiz_bg .quiz .left h2 {font-size:;}
+.quiz_bg .quiz .left h3 {font-size:;}
+.quiz_bg .quiz .left #quiz_frm {}
+.quiz_bg .quiz .left #quiz_frm fieldset {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label {}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input {
+    appearance: none; /* form input 요소 숨기기 */
+}
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label span {
+    background: blue url(../images/quix_outline.png) no-repeat;
+    padding-left: 34px;
+}
+/* 상태 선택자 (radio check될 경우 span의 이미지 변경하기 */
+.quiz_bg .quiz .left #quiz_frm fieldset ul li label input:checked+span {
+    background: blue url(../images/quiz_check.png) no-repeat;
+}
+.quiz_bg .quiz .left #quiz_frm fieldset #answer_btn {}
+.quiz_bg .quiz .right {width: 550px;}
+.quiz_bg .quiz .right h2 {
+    font-size:;
+}
+.quiz_bg .quiz .right h2 img {}
+.quiz_bg .quiz .right h2 span {}
+.quiz_bg .quiz .right .contents {}
+.quiz_bg .quiz .right .contents em {}
+.quiz_bg .quiz .right .contents span {}
+.quiz_bg .quiz .right .update {}
+
+/* 3. youtube */
+.video_bg {
+    background: url(../images/video_bg.png); 
+    no-repeat fixed center; 
+    background-size: cover;
+    display: flex; flex-flow:column nowrap;
+    align-items: center; padding: 100px;
+}     
+.video_bg h2 {    
+    font-size: 3.9375rem;
+}
+.video_bg iframe {width: 800px; height: 500px;
+}
+.video_bg .sponsor_btn {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.video_bg .sponsor_btn span {}
+.video_bg .sponsor_btn img {}
+
+/* 4. 50감소 */
+.gb50 {
+    background: url(../images/50_bg.png);
+    width: 1440px; display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+}
+.gb50 .wrap50 {}
+.gb50 .wrap50 h2 {
+    font-size: 3.157rem; font-style: normal;
+    font-weight: 700; line-height: normal;
+}
+.gb50 .wrap50 h2 span {}
+.gb50 .wrap50 p {font-size: 1.777rem; font-weight: 500; }
+.gb50 .wrap50 p img {
+    width: 1200px; height: 600px;
+}
+
+/* 5. 28조/27cm/332만명 */
+.warming_bg {background: #f1f1f1;
+
+}
+.warming_bg .warming {
+    width: 1200px; margin: 0 auto ;
+    padding: 100px 0;
+}
+.warming_bg .warming h2 {
+    font-size: 3.157rem;
+    text-align: center;
+}
+.warming_bg .warming .contents {}
+.warming_bg .warming ul {
+    display: flex; flex-flow: row nowrap;
+}
+.warming_bg .warming ul li {
+    background: yellow;
+    width:calc(33.33% - 40px / 3);
+    margin-right: 20px;
+}
+.warming_bg .warming ul li:last-child {margin-right: 0;}
+.warming_bg .warming ul li .top {
+    height: 300px; 
+    background-position:center 50%;
+    background-size: cover;
+}
+.warming_bg .warming ul li:nth-child(1) .top {
+    background-image:url(../images/28.png);
+}
+.warming_bg .warming ul li:nth-child(2) .top {
+    background-image:url(../images/27.png);
+}
+.warming_bg .warming ul li:nth-child(3) .top {
+    background-image:url(../images/28.png);
+}
+.warming_bg .warming ul li .top h3 {}
+.warming_bg .warming ul li .top p {}
+.warming_bg .warming ul li .list_contents {}
+
+
