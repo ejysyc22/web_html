@@ -1,0 +1,125 @@
+/* main */
+main {}
+/* main - 1. visual */
+main .visual {
+    position:relative; overflow:hidden;
+    height:100vh;
+}
+main .visual .txt {
+    position:absolute; width:100%; top:40%;
+    text-align:center; z-index:900;
+}
+main .visual .txt p {
+    color:#fff; font-size:2.3125rem;
+    letter-spacing:-0.02rem;
+}
+main .visual .txt h1 {
+    font-size:3.125rem; font-weight:700;
+    letter-spacing:-0.02rem;
+    margin:20px 0;
+}
+main .visual .txt .link {
+    display:flex; justify-content: center;
+}
+main .visual .txt .link a {
+    width:300px; padding:15px 0;
+    background:rgba(255,255,255,0.5);
+    border-radius:20px; font-size:1.75rem;
+}
+main .visual .txt .link a:hover {
+    background:#2559df; color:#fff;
+}
+main .visual .txt .link a:first-child {margin-right:10px;}
+main .visual video {
+    width:100%;
+    /* 화면크기 조정 시 비디오 중심축 맞추기 */
+    /* 필수조건 ★ 비디오의 부모가 vh or px 높이설정준비! */
+    position:absolute; left:50%;
+    transform:translateX(-50%);
+    /*방법3 절대크기값*/
+    /* width:1920px; */
+}
+/* 와이드 비율의 video 화면 전체 배치 시 여백해결법 */
+/* 1. 반응형웹 @media 특정해상도마다 비디오의 크기 설정값 변경 */
+/* 2. 가장 큰 데스크탑 기준으로 너비를 100% 보다 
+    크게 설정하고 넘치게 하는 방법 */
+/* 3. 상대크기가 아닌 절대크기값(px) 크기를 설정해서 
+    화면 해상도에 영향을 받지않는방법 */
+/* main 2-adver-bnr */
+main .adver_bnr {
+    background:url(../images/bnr.jpg);
+    height:300px;
+}
+main .adver_bnr .txt {
+    /* contents width px */
+    max-width:1200px; margin:0 auto;
+    padding-top:50px;
+}
+main .adver_bnr .txt p {
+    font-size: 1.75rem; letter-spacing: -0.035rem;
+}
+main .adver_bnr .txt h1 {
+    font-size: 3.125rem; font-weight: 700;letter-spacing: -0.0625rem;
+    margin:20px 0;
+}
+main .adver_bnr .txt .link {display:flex;}
+main .adver_bnr .txt .link a {
+    width: 150px; padding: 10px 0; margin-right:10px;
+    background:#000; color:#fff; border-radius:10px;
+    text-align: center;
+}
+/* 온라인서비스 */
+main #online_service {
+    background:url(../images/service_bg1.jpg) no-repeat;
+    background-position:right center;
+    background-size:80%;
+    padding-top:60px;
+    margin-top:103px;
+}
+main #online_service .txt {
+    background:#fff;
+    width:870px;
+    padding:54px 0 76px 150px;
+}
+main #online_service .txt h1 {
+    font-size: 3.125rem; font-weight: 700; letter-spacing: -0.0625rem;
+}
+main #online_service .txt p {
+    font-size: 1.25rem; 
+    width:70%; margin:30px 0;
+    line-height: 2.1875rem; /* 175% */ letter-spacing: -0.025rem;
+}
+main #online_service .txt .service_link {
+    display:inline-block;
+    border-radius: 1.25rem; color:#fff;
+    background:#000; padding: 15px 40px;
+    font-size: 1.75rem; letter-spacing: -0.035rem;
+}
+/* 매장서비스 */
+main #shop_service {
+    background:url(../images/service_bg2.jpg) no-repeat;
+    background-position:left center;
+    background-size:80%;
+    padding-top:60px;
+    margin-top:103px;
+    display: flex; flex-flow: row-reverse;
+}
+main #shop_service .txt {
+    background:#fff;
+    width:870px; text-align:right;
+    padding:54px 150px 76px 0; 
+}
+main #shop_service .txt h1 {    
+    font-size: 3.125rem; font-weight: 700; letter-spacing: -0.0625rem;
+}
+main #shop_service .txt p {
+    font-size: 1.25rem; 
+    margin:30px 0;
+    line-height: 2.1875rem; /* 175% */ letter-spacing: -0.025rem;
+}
+main #shop_service .txt .store_link {
+    display:inline-block;
+    border-radius: 1.25rem; color:#fff;
+    background:#000; padding: 15px 40px;
+    font-size: 1.75rem; letter-spacing: -0.035rem;
+}
